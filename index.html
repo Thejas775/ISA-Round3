@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<video id="background-video" autoplay muted loop>
+  <source src="BOSSFINAL.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<div id="content" style="display: none;">
+  <div class="container">
+    <h1 class="topcolor">Enter the Passkey</h1>
+    <div id="timer" class="topcolor">2:00</div>
+    <div class="input-group">
+      <label class="input-group__label" for="passkey">Passkey</label>
+      <input type="text" id="passkey" class="input-group__input" placeholder="Enter pass key">
+    </div>
+    <br>
+    <button class="button-33" role="button" onclick="submitPasskey()">Submit Passkey</button>
+    <div id="result" class="topcolor"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
